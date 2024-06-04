@@ -6,8 +6,9 @@ public partial class Player : CharacterBody3D
     [ExportGroup("Required Nodes")]
     [Export] public AnimationPlayer animationPlayer = null;
     [Export] public Sprite3D sprite3D = null;
+    [Export] public StateMachine stateMachine = null;
 
-    private Vector2 direction = Vector2.Zero;
+    public Vector2 direction = Vector2.Zero;
 
     public override void _PhysicsProcess(double delta)
     {

@@ -3,9 +3,19 @@ using System;
 
 public partial class PlayerIdleState : Node
 {
+    private Player player = null;
+
     public override void _Ready()
     {
-        
+        player = GetOwner<Player>();
+    }
+
+    public override void _PhysicsProcess(double delta)
+    {
+        if (player.direction != Vector2.Zero)
+        {
+            player.stateMachine.SwitchState<PlayerMoveState>();
+        }
     }
 
     public override void _Notification(int what)
@@ -13,7 +23,6 @@ public partial class PlayerIdleState : Node
         base._Notification(what);
         if (what == 5001)
         {
-            Player player = GetOwner<Player>();
             player.animationPlayer.Play(GameConstants.ANIM_IDLE);
         }
     }
