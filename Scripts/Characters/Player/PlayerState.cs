@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-public partial class PlayerState : Node
+public abstract partial class PlayerState : Node
 {
     protected Player player = null;
 
