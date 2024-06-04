@@ -3,12 +3,14 @@ using System;
 
 public partial class PlayerDashState : Node
 {
+    [Export] private Timer timer = null;
+
     private Player player = null;
 
     public override void _Ready()
     {
         player = GetOwner<Player>();
-        SetPhysicsProcess(false);
+        timer.Timeout += HandleDashTimeout;
     }
 
     public override void _Notification(int what)
@@ -17,11 +19,12 @@ public partial class PlayerDashState : Node
         if (what == 5001)
         {
             player.animationPlayer.Play(GameConstants.ANIM_DASH);
-            SetPhysicsProcess(true);
+            timer.Start();
         }
-        else if (what == 5002)
-        {
-            SetPhysicsProcess(false);
-        }
+    }
+
+    private void HandleDashTimeout()
+    {
+        player.stateMachine.SwitchState<PlayerIdleState>();
     }
 }

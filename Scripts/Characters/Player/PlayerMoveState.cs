@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using static Godot.TextServer;
 
 public partial class PlayerMoveState : Node
 {
@@ -17,7 +18,15 @@ public partial class PlayerMoveState : Node
         if (player.direction == Vector2.Zero)
         {
             player.stateMachine.SwitchState<PlayerIdleState>();
+            return;
         }
+
+        player.Velocity = new Vector3(player.direction.X, 0.0f, player.direction.Y);
+        player.Velocity *= 5.0f;
+
+        player.MoveAndSlide();
+
+        player.Flip();
     }
 
     public override void _Input(InputEvent @event)
