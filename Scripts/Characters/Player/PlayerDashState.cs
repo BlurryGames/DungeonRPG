@@ -22,11 +22,11 @@ public partial class PlayerDashState : PlayerState
     protected override void EnterState()
     {
         base.EnterState();
-        player.animationPlayer.Play(GameConstants.ANIM_DASH);
-        player.Velocity = new Vector3(player.direction.X, 0.0f, player.direction.Y);
+        player.AnimationPlayer.Play(GameConstants.ANIM_DASH);
+        player.Velocity = new Vector3(player.Direction.X, 0.0f, player.Direction.Y);
         if (player.Velocity == Vector3.Zero)
         {
-            player.Velocity = player.sprite3D.FlipH ? Vector3.Left : Vector3.Right;
+            player.Velocity = player.Sprite3D.FlipH ? Vector3.Left : Vector3.Right;
         }
 
         player.Velocity *= speed;
@@ -36,6 +36,6 @@ public partial class PlayerDashState : PlayerState
     private void HandleDashTimeout()
     {
         player.Velocity = Vector3.Zero;
-        player.stateMachine.SwitchState<PlayerIdleState>();
+        player.StateMachine.SwitchState<PlayerIdleState>();
     }
 }

@@ -8,13 +8,13 @@ public partial class PlayerMoveState : PlayerState
 
     public override void _PhysicsProcess(double delta)
     {
-        if (player.direction == Vector2.Zero)
+        if (player.Direction == Vector2.Zero)
         {
-            player.stateMachine.SwitchState<PlayerIdleState>();
+            player.StateMachine.SwitchState<PlayerIdleState>();
             return;
         }
 
-        player.Velocity = new Vector3(player.direction.X, 0.0f, player.direction.Y);
+        player.Velocity = new Vector3(player.Direction.X, 0.0f, player.Direction.Y);
         player.Velocity *= speed;
 
         player.MoveAndSlide();
@@ -26,7 +26,7 @@ public partial class PlayerMoveState : PlayerState
     {
         if (Input.IsActionJustPressed(GameConstants.INPUT_DASH))
         {
-            player.stateMachine.SwitchState<PlayerDashState>();
+            player.StateMachine.SwitchState<PlayerDashState>();
         }
     }
 
@@ -34,6 +34,6 @@ public partial class PlayerMoveState : PlayerState
     {
         base.EnterState();
 
-        player.animationPlayer.Play(GameConstants.ANIM_MOVE);
+        player.AnimationPlayer.Play(GameConstants.ANIM_MOVE);
     }
 }

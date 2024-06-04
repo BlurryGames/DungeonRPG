@@ -99,11 +99,11 @@ _data = {
 "Move": SubResource("Animation_2ppvv")
 }
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("animationPlayer", "sprite3D", "stateMachine")]
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayer", "Sprite3D", "StateMachine")]
 script = ExtResource("1_5pua8")
-animationPlayer = NodePath("AnimationPlayer")
-sprite3D = NodePath("Sprite3D")
-stateMachine = NodePath("StateMachine")
+AnimationPlayer = NodePath("AnimationPlayer")
+Sprite3D = NodePath("Sprite3D")
+StateMachine = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 texture = ExtResource("1_r751r")
