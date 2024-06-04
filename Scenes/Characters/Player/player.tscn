@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://daypj7wgc7p4t"]
+[gd_scene load_steps=37 format=3 uid="uid://daypj7wgc7p4t"]
 
 [ext_resource type="Script" path="res://Scripts/Player/Player.cs" id="1_5pua8"]
 [ext_resource type="Texture2D" uid="uid://djsmdeqkn26f6" path="res://Assets/Sprites/Characters/Player/Running/Running_000.png" id="1_jbut7"]
@@ -31,6 +31,8 @@
 [ext_resource type="Texture2D" uid="uid://un5glc7uwdy2" path="res://Assets/Sprites/Characters/Player/Running/Running_009.png" id="28_ge4op"]
 [ext_resource type="Texture2D" uid="uid://c65phr4vxdhkp" path="res://Assets/Sprites/Characters/Player/Running/Running_010.png" id="29_082ry"]
 [ext_resource type="Texture2D" uid="uid://dt4f164o4ok8x" path="res://Assets/Sprites/Characters/Player/Running/Running_011.png" id="30_py78g"]
+[ext_resource type="Script" path="res://Scripts/Player/PlayerIdleState.cs" id="32_g82gl"]
+[ext_resource type="Script" path="res://Scripts/Player/PlayerMoveState.cs" id="33_46bef"]
 
 [sub_resource type="Animation" id="Animation_of6v1"]
 resource_name = "Idle"
@@ -78,9 +80,15 @@ animationPlayer = NodePath("AnimationPlayer")
 sprite3D = NodePath("Sprite3D")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-texture = ExtResource("1_jbut7")
+texture = ExtResource("1_r751r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_5258c")
 }
+
+[node name="MoveState" type="Node" parent="."]
+script = ExtResource("33_46bef")
+
+[node name="IdleState" type="Node" parent="."]
+script = ExtResource("32_g82gl")
