@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\general\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\general\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\levels\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\levels\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
+              "RelativeDocumentMoniker": "Scripts\\General\\GameConstants.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
+              "RelativeToolTip": "Scripts\\General\\GameConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T16:20:50.124Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +45,14 @@
               "RelativeDocumentMoniker": "Scripts\\Player\\Player.cs",
               "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Player\\Player.cs",
               "RelativeToolTip": "Scripts\\Player\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T10:58:57.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Levels\\Main.cs",
               "RelativeDocumentMoniker": "Scripts\\Levels\\Main.cs",
