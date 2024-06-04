@@ -21,5 +21,6 @@ project/assembly_name="DungeonRPG"
 [file_customization]
 
 folder_colors={
-"res://Assets/": "pink"
+"res://Assets/": "pink",
+"res://Scenes/": "green"
 }
