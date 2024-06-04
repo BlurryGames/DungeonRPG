@@ -5,7 +5,7 @@ public partial class PlayerDashState : PlayerState
 {
     [Export] private Timer timer = null;
 
-    [Export] private float speed = 10.0f;
+    [Export(PropertyHint.Range, "0.0f, 20.0f, 0.1f")] private float speed = 10.0f;
 
     public override void _Ready()
     {

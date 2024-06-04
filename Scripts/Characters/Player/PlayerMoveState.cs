@@ -4,7 +4,7 @@ using static Godot.TextServer;
 
 public partial class PlayerMoveState : PlayerState
 {
-    [Export] private float speed = 5.0f;
+    [Export(PropertyHint.Range, "0.0f, 20.0f, 0.1f")] private float speed = 5.0f;
 
     public override void _PhysicsProcess(double delta)
     {
