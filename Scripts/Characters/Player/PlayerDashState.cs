@@ -1,17 +1,15 @@
 using Godot;
 using System;
 
-public partial class PlayerDashState : Node
+public partial class PlayerDashState : PlayerState
 {
     [Export] private Timer timer = null;
 
     [Export] private float speed = 10.0f;
 
-    private Player player = null;
-
     public override void _Ready()
     {
-        player = GetOwner<Player>();
+        base._Ready();
         timer.Timeout += HandleDashTimeout;
     }
 
@@ -21,21 +19,18 @@ public partial class PlayerDashState : Node
         player.Flip();
     }
 
-    public override void _Notification(int what)
+    protected override void EnterState()
     {
-        base._Notification(what);
-        if (what == 5001)
+        base.EnterState();
+        player.animationPlayer.Play(GameConstants.ANIM_DASH);
+        player.Velocity = new Vector3(player.direction.X, 0.0f, player.direction.Y);
+        if (player.Velocity == Vector3.Zero)
         {
-            player.animationPlayer.Play(GameConstants.ANIM_DASH);
-            player.Velocity = new Vector3(player.direction.X, 0.0f, player.direction.Y);
-            if (player.Velocity == Vector3.Zero)
-            {
-                player.Velocity = player.sprite3D.FlipH ? Vector3.Left : Vector3.Right;
-            }
-
-            player.Velocity *= speed;
-            timer.Start();
+            player.Velocity = player.sprite3D.FlipH ? Vector3.Left : Vector3.Right;
         }
+
+        player.Velocity *= speed;
+        timer.Start();
     }
 
     private void HandleDashTimeout()

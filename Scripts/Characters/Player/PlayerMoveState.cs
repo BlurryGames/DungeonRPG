@@ -2,17 +2,8 @@ using Godot;
 using System;
 using static Godot.TextServer;
 
-public partial class PlayerMoveState : Node
+public partial class PlayerMoveState : PlayerState
 {
-    private Player player = null;
-
-    public override void _Ready()
-    {
-        player = GetOwner<Player>();
-        SetPhysicsProcess(false);
-        SetProcessInput(false);
-    }
-
     public override void _PhysicsProcess(double delta)
     {
         if (player.direction == Vector2.Zero)
@@ -37,19 +28,10 @@ public partial class PlayerMoveState : Node
         }
     }
 
-    public override void _Notification(int what)
+    protected override void EnterState()
     {
-        base._Notification(what);
-        if (what == 5001)
-        {
-            player.animationPlayer.Play(GameConstants.ANIM_MOVE);
-            SetPhysicsProcess(true);
-            SetProcessInput(true);
-        }
-        else if (what == 5002)
-        {
-            SetPhysicsProcess(false);
-            SetProcessInput(false);
-        }
+        base.EnterState();
+
+        player.animationPlayer.Play(GameConstants.ANIM_MOVE);
     }
 }
