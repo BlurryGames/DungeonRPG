@@ -4,6 +4,8 @@ using static Godot.TextServer;
 
 public partial class PlayerMoveState : PlayerState
 {
+    [Export] private float speed = 5.0f;
+
     public override void _PhysicsProcess(double delta)
     {
         if (player.direction == Vector2.Zero)
@@ -13,7 +15,7 @@ public partial class PlayerMoveState : PlayerState
         }
 
         player.Velocity = new Vector3(player.direction.X, 0.0f, player.direction.Y);
-        player.Velocity *= 5.0f;
+        player.Velocity *= speed;
 
         player.MoveAndSlide();
 
