@@ -1,6 +1,6 @@
-[gd_scene load_steps=37 format=3 uid="uid://daypj7wgc7p4t"]
+[gd_scene load_steps=38 format=3 uid="uid://daypj7wgc7p4t"]
 
-[ext_resource type="Script" path="res://Scripts/Player/Player.cs" id="1_5pua8"]
+[ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_5pua8"]
 [ext_resource type="Texture2D" uid="uid://djsmdeqkn26f6" path="res://Assets/Sprites/Characters/Player/Running/Running_000.png" id="1_jbut7"]
 [ext_resource type="Texture2D" uid="uid://d1nk04j0igfne" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_r751r"]
 [ext_resource type="Texture2D" uid="uid://vishlef4hjj2" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_001.png" id="2_35sog"]
@@ -31,8 +31,9 @@
 [ext_resource type="Texture2D" uid="uid://un5glc7uwdy2" path="res://Assets/Sprites/Characters/Player/Running/Running_009.png" id="28_ge4op"]
 [ext_resource type="Texture2D" uid="uid://c65phr4vxdhkp" path="res://Assets/Sprites/Characters/Player/Running/Running_010.png" id="29_082ry"]
 [ext_resource type="Texture2D" uid="uid://dt4f164o4ok8x" path="res://Assets/Sprites/Characters/Player/Running/Running_011.png" id="30_py78g"]
-[ext_resource type="Script" path="res://Scripts/Player/PlayerIdleState.cs" id="32_g82gl"]
-[ext_resource type="Script" path="res://Scripts/Player/PlayerMoveState.cs" id="33_46bef"]
+[ext_resource type="Script" path="res://Scripts/Characters/Player/PlayerIdleState.cs" id="32_g82gl"]
+[ext_resource type="Script" path="res://Scripts/Characters/Player/PlayerMoveState.cs" id="33_46bef"]
+[ext_resource type="Script" path="res://Scripts/Characters/StateMachine.cs" id="34_xysl8"]
 
 [sub_resource type="Animation" id="Animation_of6v1"]
 resource_name = "Idle"
@@ -92,3 +93,8 @@ script = ExtResource("33_46bef")
 
 [node name="IdleState" type="Node" parent="."]
 script = ExtResource("32_g82gl")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("currentState", "states")]
+script = ExtResource("34_xysl8")
+currentState = NodePath("../IdleState")
+states = [NodePath("../IdleState"), NodePath("../MoveState")]
