@@ -213,11 +213,12 @@ _data = {
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jtnxj"]
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayer", "Sprite3D", "StateMachine")]
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayer", "Sprite3D", "StateMachine", "Agent")]
 script = ExtResource("1_ck4s4")
 AnimationPlayer = NodePath("AnimationPlayer")
 Sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("StateMachine")
+Agent = NodePath("NavigationAgent3D")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 pixel_size = 0.0025
@@ -234,7 +235,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 shape = SubResource("CapsuleShape3D_jtnxj")
 
 [node name="StateMachine" parent="." node_paths=PackedStringArray("currentState", "states") instance=ExtResource("100_yjc0t")]
-currentState = NodePath("ReturnState")
+currentState = NodePath("IdleState")
 states = [NodePath("IdleState"), NodePath("ReturnState")]
 
 [node name="IdleState" type="Node" parent="StateMachine"]
@@ -242,3 +243,6 @@ script = ExtResource("101_eug2q")
 
 [node name="ReturnState" type="Node" parent="StateMachine"]
 script = ExtResource("103_ac8ec")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+debug_enabled = true

@@ -8,14 +8,14 @@ public partial class EnemyReturnState : EnemyState
     {
         base._Ready();
 
-        Vector3 localPosition = character.path.Curve.GetPointPosition(0);
-        Vector3 globalPosition = character.path.GlobalPosition;
+        Vector3 localPosition = character.Path.Curve.GetPointPosition(0);
+        Vector3 globalPosition = character.Path.GlobalPosition;
         destination = localPosition + globalPosition;
     }
 
     public override void _PhysicsProcess(double delta)
     {
-        if (character.GlobalPosition == destination)
+        if (character.Agent.IsNavigationFinished())
         {
             GD.Print("Reached destination!");
             return;
@@ -29,5 +29,7 @@ public partial class EnemyReturnState : EnemyState
     protected override void EnterState()
     {
         character.AnimationPlayer.Play(GameConstants.ANIM_MOVE);
+
+        character.Agent.TargetPosition = destination;
     }
 }

@@ -142,9 +142,9 @@ shape = SubResource("BoxShape3D_bim4b")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1.25, 2)
 curve = SubResource("Curve3D_nk3od")
 
-[node name="Enemy" parent="Enemies/Path3D" node_paths=PackedStringArray("path") instance=ExtResource("4_86ar8")]
+[node name="Enemy" parent="Enemies/Path3D" node_paths=PackedStringArray("Path") instance=ExtResource("4_86ar8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.854, 0.55, 0.591)
-path = NodePath("..")
+Path = NodePath("..")
 
 [node name="Path3D2" type="Path3D" parent="Enemies"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1326, 1.25, -4.54127)
