@@ -36,10 +36,10 @@
 [ext_resource type="Script" path="res://Scripts/Characters/Player/PlayerMoveState.cs" id="33_46bef"]
 [ext_resource type="Texture2D" uid="uid://6cfqad5ap1wy" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_001.png" id="33_dhwei"]
 [ext_resource type="Texture2D" uid="uid://bj1c5u46r1abc" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_002.png" id="34_r0mb1"]
-[ext_resource type="Script" path="res://Scripts/Characters/StateMachine.cs" id="34_xysl8"]
 [ext_resource type="Texture2D" uid="uid://djcy1dxmbcqh6" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_003.png" id="35_cwjm7"]
 [ext_resource type="Texture2D" uid="uid://bq6om1rjayt4o" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_004.png" id="36_6pltk"]
 [ext_resource type="Texture2D" uid="uid://csyx66tknpbv0" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_005.png" id="37_eqi74"]
+[ext_resource type="PackedScene" uid="uid://l07ybc3q4l8v" path="res://Scenes/Characters/state_machine.tscn" id="38_2c272"]
 [ext_resource type="Script" path="res://Scripts/Characters/Player/PlayerDashState.cs" id="41_qarbg"]
 
 [sub_resource type="Animation" id="Animation_rxr3i"]
@@ -119,10 +119,9 @@ libraries = {
 "": SubResource("AnimationLibrary_5258c")
 }
 
-[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("currentState", "states")]
-script = ExtResource("34_xysl8")
+[node name="StateMachine" parent="." node_paths=PackedStringArray("currentState", "states") instance=ExtResource("38_2c272")]
 currentState = NodePath("IdleState")
-states = [NodePath("IdleState"), NodePath("MoveState"), NodePath("DashState")]
+states = [NodePath("MoveState"), NodePath("DashState"), NodePath("IdleState")]
 
 [node name="MoveState" type="Node" parent="StateMachine"]
 script = ExtResource("33_46bef")

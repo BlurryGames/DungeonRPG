@@ -15,27 +15,27 @@ public partial class PlayerDashState : PlayerState
 
     public override void _PhysicsProcess(double delta)
     {
-        player.MoveAndSlide();
-        player.Flip();
+        character.MoveAndSlide();
+        character.Flip();
     }
 
     protected override void EnterState()
     {
         base.EnterState();
-        player.AnimationPlayer.Play(GameConstants.ANIM_DASH);
-        player.Velocity = new Vector3(player.Direction.X, 0.0f, player.Direction.Y);
-        if (player.Velocity == Vector3.Zero)
+        character.AnimationPlayer.Play(GameConstants.ANIM_DASH);
+        character.Velocity = new Vector3(character.Direction.X, 0.0f, character.Direction.Y);
+        if (character.Velocity == Vector3.Zero)
         {
-            player.Velocity = player.Sprite3D.FlipH ? Vector3.Left : Vector3.Right;
+            character.Velocity = character.Sprite3D.FlipH ? Vector3.Left : Vector3.Right;
         }
 
-        player.Velocity *= speed;
+        character.Velocity *= speed;
         timer.Start();
     }
 
     private void HandleDashTimeout()
     {
-        player.Velocity = Vector3.Zero;
-        player.StateMachine.SwitchState<PlayerIdleState>();
+        character.Velocity = Vector3.Zero;
+        character.StateMachine.SwitchState<PlayerIdleState>();
     }
 }

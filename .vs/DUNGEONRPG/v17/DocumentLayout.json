@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\GodotProjects\\DungeonRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemyIdleState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\Characters\\Enemy\\EnemyIdleState.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\player\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\player\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\player\\playermovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\player\\playerdashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\player\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\Characters\\Enemy\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\characterstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\characterstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\general\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,29 +42,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "GameConstants.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
-              "RelativeDocumentMoniker": "Scripts\\General\\GameConstants.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
-              "RelativeToolTip": "Scripts\\General\\GameConstants.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA1AAAA",
+              "Title": "Character.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Character.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Character.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Character.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Character.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:14:22.578Z"
+              "WhenOpened": "2024-06-05T15:10:36.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\Enemy.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:07:11.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyState.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemyState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\EnemyState.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemyState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Enemy\\EnemyState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T15:04:01.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyIdleState.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemyIdleState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\EnemyIdleState.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemyIdleState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\Enemy\\EnemyIdleState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:43:46.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlayerState.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerState.cs",
               "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerState.cs",
               "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerState.cs",
               "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T20:36:34.085Z",
               "EditorCaption": ""
@@ -68,65 +112,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlayerDashState.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerDashState.cs",
-              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerDashState.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerDashState.cs",
-              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerDashState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T19:11:12.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerMoveState.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerMoveState.cs",
-              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerMoveState.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerMoveState.cs",
-              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerMoveState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:39:58.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerIdleState.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerIdleState.cs",
-              "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\PlayerIdleState.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\PlayerIdleState.cs",
-              "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerIdleState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:39:57.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StateMachine.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\StateMachine.cs",
-              "RelativeDocumentMoniker": "Scripts\\Characters\\StateMachine.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\StateMachine.cs",
-              "RelativeToolTip": "Scripts\\Characters\\StateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T17:34:05.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Scripts\\Characters\\Player\\Player.cs",
               "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Player\\Player.cs",
               "RelativeToolTip": "Scripts\\Characters\\Player\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T18:40:15.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CharacterState.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\CharacterState.cs",
+              "RelativeDocumentMoniker": "Scripts\\Characters\\CharacterState.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\CharacterState.cs",
+              "RelativeToolTip": "Scripts\\Characters\\CharacterState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:47:13.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
+              "RelativeDocumentMoniker": "Scripts\\General\\GameConstants.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
+              "RelativeToolTip": "Scripts\\General\\GameConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T19:14:22.578Z",
               "EditorCaption": ""
             }
           ]

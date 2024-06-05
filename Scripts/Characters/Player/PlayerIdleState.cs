@@ -5,9 +5,9 @@ public partial class PlayerIdleState : PlayerState
 {
     public override void _PhysicsProcess(double delta)
     {
-        if (player.Direction != Vector2.Zero)
+        if (character.Direction != Vector2.Zero)
         {
-            player.StateMachine.SwitchState<PlayerMoveState>();
+            character.StateMachine.SwitchState<PlayerMoveState>();
         }
     }
 
@@ -15,13 +15,13 @@ public partial class PlayerIdleState : PlayerState
     {
         if (Input.IsActionJustPressed(GameConstants.INPUT_DASH))
         {
-            player.StateMachine.SwitchState<PlayerDashState>();
+            character.StateMachine.SwitchState<PlayerDashState>();
         }
     }
 
     protected override void EnterState()
     {
         base.EnterState();
-        player.AnimationPlayer.Play(GameConstants.ANIM_IDLE);
+        character.AnimationPlayer.Play(GameConstants.ANIM_IDLE);
     }
 }
