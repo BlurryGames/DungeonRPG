@@ -13,10 +13,21 @@ public partial class EnemyReturnState : EnemyState
         destination = localPosition + globalPosition;
     }
 
+    public override void _PhysicsProcess(double delta)
+    {
+        if (character.GlobalPosition == destination)
+        {
+            GD.Print("Reached destination!");
+            return;
+        }
+
+        character.Velocity = character.GlobalPosition.DirectionTo(destination);
+
+        character.MoveAndSlide();
+    }
+
     protected override void EnterState()
     {
         character.AnimationPlayer.Play(GameConstants.ANIM_MOVE);
-
-        character.GlobalPosition = destination;
     }
 }
