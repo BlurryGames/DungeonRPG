@@ -31,6 +31,12 @@ public partial class EnemyPatrolState : EnemyState
         idleTimer.Timeout += HandleTimeout;
     }
 
+    protected override void ExitState()
+    {
+        character.Agent.NavigationFinished -= HandleNavigationFinished;
+        idleTimer.Timeout -= HandleTimeout;
+    }
+
     private void HandleNavigationFinished()
     {
         character.AnimationPlayer.Play(GameConstants.ANIM_IDLE);
