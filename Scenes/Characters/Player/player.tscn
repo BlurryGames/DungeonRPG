@@ -106,6 +106,7 @@ Sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.0025
 texture = ExtResource("1_r751r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
