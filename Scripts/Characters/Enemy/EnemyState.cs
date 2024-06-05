@@ -13,6 +13,7 @@ public abstract partial class EnemyState : CharacterState
 
     protected void Move()
     {
+        character.Agent.GetNextPathPosition();
         character.Velocity = character.GlobalPosition.DirectionTo(destination);
 
         character.MoveAndSlide();
