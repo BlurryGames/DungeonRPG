@@ -128,14 +128,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.75, 3.5, -13.5)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/InvisibleWall3"]
 shape = SubResource("BoxShape3D_bim4b")
 
-[node name="Enemy" parent="." instance=ExtResource("4_86ar8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.146, 1.8, 2.591)
-
 [node name="Enemies" type="Node3D" parent="."]
 
 [node name="Path3D" type="Path3D" parent="Enemies"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1.25, 2)
 curve = SubResource("Curve3D_nk3od")
+
+[node name="Enemy" parent="Enemies/Path3D" node_paths=PackedStringArray("path") instance=ExtResource("4_86ar8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.854, 0.55, 0.591)
+path = NodePath("..")
 
 [node name="Path3D2" type="Path3D" parent="Enemies"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1326, 1.25, -4.54127)
