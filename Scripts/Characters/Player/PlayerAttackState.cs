@@ -37,6 +37,11 @@ public partial class PlayerAttackState : PlayerState
 
     private void PerformHit()
     {
-        GD.Print("Perform hit!");
+        Vector3 newPosition = character.Sprite3D.FlipH ? Vector3.Left : Vector3.Right;
+
+        float distanceMultiplier = 0.75f;
+        newPosition *= distanceMultiplier;
+
+        character.Hitbox.Position = newPosition;
     }
 }

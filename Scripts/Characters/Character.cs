@@ -10,6 +10,7 @@ public abstract partial class Character : CharacterBody3D
     [Export] public Sprite3D Sprite3D { get; private set; } = null;
     [Export] public StateMachine StateMachine { get; private set; } = null;
     [Export] public Area3D Hurtbox { get; private set; } = null;
+    [Export] public Area3D Hitbox { get; private set; } = null;
 
     [ExportGroup("AI Nodes")]
     [Export] public Path3D Path { get; private set; } = null;
