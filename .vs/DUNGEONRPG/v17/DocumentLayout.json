@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\EnemyAttackState.cs",
               "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemyAttackState.cs",
               "RelativeToolTip": "Scripts\\Characters\\Enemy\\EnemyAttackState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABMAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAA5wCcAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T19:48:45.89Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "Scripts\\Characters\\Character.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAzwCYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T07:13:45.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T07:13:45.479Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Scripts\\Characters\\Player\\PlayerAttackState.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAQwCIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T06:52:29.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-06T06:52:29.133Z"
             }
           ]
         }
