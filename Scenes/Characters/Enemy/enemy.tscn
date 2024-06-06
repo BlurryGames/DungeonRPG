@@ -1,9 +1,10 @@
-[gd_scene load_steps=117 format=3 uid="uid://dtg8hl46p36y5"]
+[gd_scene load_steps=120 format=3 uid="uid://dtg8hl46p36y5"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/Enemy.cs" id="1_ck4s4"]
 [ext_resource type="Texture2D" uid="uid://d33405vltmtut" path="res://Assets/Sprites/Characters/Enemy Knight/Move/0_Demons_of_Darkness_Walking_001.png" id="1_nlgmt"]
 [ext_resource type="Texture2D" uid="uid://dssnuijhyeeba" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_000.png" id="1_u0bse"]
 [ext_resource type="Texture2D" uid="uid://dq8efsbantmrq" path="res://Assets/Sprites/Characters/Enemy Knight/Death/0_Demons_of_Darkness_Dying_000.png" id="1_xnc65"]
+[ext_resource type="Script" path="res://Scripts/Resources/StatResource.cs" id="2_8wk6r"]
 [ext_resource type="Texture2D" uid="uid://cgq4cc7uexfgt" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_001.png" id="2_owhco"]
 [ext_resource type="Texture2D" uid="uid://b6eexmbql67xi" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_002.png" id="3_dcdtu"]
 [ext_resource type="Texture2D" uid="uid://dp8xdckj44olg" path="res://Assets/Sprites/Characters/Enemy Knight/Idle/0_Demons_of_Darkness_Idle_003.png" id="4_1l6ww"]
@@ -106,6 +107,16 @@
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/EnemyPatrolState.cs" id="104_iebqt"]
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/EnemyChaseState.cs" id="105_5d1ke"]
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/EnemyAttackState.cs" id="106_7sxh3"]
+
+[sub_resource type="Resource" id="Resource_71jif"]
+script = ExtResource("2_8wk6r")
+StatType = 0
+StatValue = 20.0
+
+[sub_resource type="Resource" id="Resource_0ovpn"]
+script = ExtResource("2_8wk6r")
+StatType = 1
+StatValue = 4.0
 
 [sub_resource type="Animation" id="Animation_lpjwu"]
 resource_name = "Attack"
@@ -226,6 +237,7 @@ radius = 1.4
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_ck4s4")
+stats = Array[Object]([SubResource("Resource_71jif"), SubResource("Resource_0ovpn")])
 AnimationPlayer = NodePath("AnimationPlayer")
 Sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("StateMachine")

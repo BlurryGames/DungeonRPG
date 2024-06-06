@@ -2,6 +2,8 @@
 
 public abstract partial class Character : CharacterBody3D
 {
+    [Export] private StatResource[] stats = null;
+
     [ExportGroup("Required Nodes")]
     [Export] public AnimationPlayer AnimationPlayer { get; private set; } = null;
     [Export] public Sprite3D Sprite3D { get; private set; } = null;
