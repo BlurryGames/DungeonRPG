@@ -197,8 +197,13 @@ timer = NodePath("Timer")
 wait_time = 0.4
 one_shot = true
 
-[node name="AttackState" type="Node" parent="StateMachine"]
+[node name="AttackState" type="Node" parent="StateMachine" node_paths=PackedStringArray("comboTimer")]
 script = ExtResource("66_a7an2")
+comboTimer = NodePath("Timer")
+
+[node name="Timer" type="Timer" parent="StateMachine/AttackState"]
+wait_time = 2.0
+one_shot = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
