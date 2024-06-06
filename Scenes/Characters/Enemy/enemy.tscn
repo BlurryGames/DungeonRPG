@@ -1,4 +1,4 @@
-[gd_scene load_steps=120 format=3 uid="uid://dtg8hl46p36y5"]
+[gd_scene load_steps=121 format=3 uid="uid://dtg8hl46p36y5"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Enemy/Enemy.cs" id="1_ck4s4"]
 [ext_resource type="Texture2D" uid="uid://d33405vltmtut" path="res://Assets/Sprites/Characters/Enemy Knight/Move/0_Demons_of_Darkness_Walking_001.png" id="1_nlgmt"]
@@ -233,7 +233,10 @@ radius = 6.0
 [sub_resource type="SphereShape3D" id="SphereShape3D_weydi"]
 radius = 1.4
 
-[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayer", "Sprite3D", "StateMachine", "Hurtbox", "Agent", "chaseArea", "attackArea")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_mr765"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayer", "Sprite3D", "StateMachine", "Hurtbox", "Hitbox", "HitboxShape", "Agent", "chaseArea", "attackArea")]
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_ck4s4")
@@ -242,6 +245,8 @@ AnimationPlayer = NodePath("AnimationPlayer")
 Sprite3D = NodePath("Sprite3D")
 StateMachine = NodePath("StateMachine")
 Hurtbox = NodePath("Hurtbox")
+Hitbox = NodePath("Hitbox")
+HitboxShape = NodePath("Hitbox/CollisionShape3D")
 Agent = NodePath("NavigationAgent3D")
 chaseArea = NodePath("ChaseArea")
 attackArea = NodePath("AttackArea")
@@ -312,3 +317,10 @@ collision_mask = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox"]
 shape = SubResource("CapsuleShape3D_jtnxj")
+
+[node name="Hitbox" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox"]
+shape = SubResource("BoxShape3D_mr765")
