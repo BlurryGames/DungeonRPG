@@ -1,5 +1,5 @@
 using Godot;
-using System;
+using System.Linq;
 
 public partial class StateMachine : Node
 {
@@ -13,14 +13,7 @@ public partial class StateMachine : Node
 
     public void SwitchState<T>()
     {
-        Node newState = null;
-        foreach (Node s in states)
-        {
-            if (s is T)
-            {
-                newState = s;
-            }
-        }
+        Node newState = states.FirstOrDefault(s => s is T);
 
         if (newState == null)
         {
