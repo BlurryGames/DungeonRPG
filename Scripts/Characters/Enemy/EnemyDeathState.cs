@@ -11,6 +11,6 @@ public partial class EnemyDeathState : EnemyState
 
     private void HandleAnimationFinished(StringName animationName)
     {
-        character.QueueFree();
+        character.Path.QueueFree();
     }
 }
