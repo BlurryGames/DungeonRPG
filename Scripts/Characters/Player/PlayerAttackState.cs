@@ -2,6 +2,7 @@ using Godot;
 
 public partial class PlayerAttackState : PlayerState
 {
+    [Export] private PackedScene lightningScene = null;
     [Export] private Timer comboTimer = null;
 
     private int comboCounter = 1;
@@ -19,11 +20,13 @@ public partial class PlayerAttackState : PlayerState
         character.AnimationPlayer.Play(GameConstants.ANIM_ATTACK + comboCounter.ToString(), -1.0, 1.5f);
 
         character.AnimationPlayer.AnimationFinished += HandleAnimationFinished;
+        character.Hitbox.BodyEntered += HandleBodyEntered;
     }
 
     protected override void ExitState()
     {
         character.AnimationPlayer.AnimationFinished -= HandleAnimationFinished;
+        character.Hitbox.BodyEntered -= HandleBodyEntered;
 
         comboTimer.Start();
     }
@@ -35,6 +38,18 @@ public partial class PlayerAttackState : PlayerState
         character.ToggleHitbox(true);
 
         character.StateMachine.SwitchState<PlayerIdleState>();
+    }
+
+    private void HandleBodyEntered(Node3D body)
+    {
+        if (comboCounter != maxComboCount)
+        {
+            return;
+        }
+
+        Lightning lightning = lightningScene.Instantiate<Lightning>();
+        GetTree().CurrentScene.AddChild(lightning);
+        lightning.GlobalPosition = body.GlobalPosition;
     }
 
     private void PerformHit()
