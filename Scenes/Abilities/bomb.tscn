@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=3 uid="uid://bv0aslltdrcpv"]
+[gd_scene load_steps=17 format=3 uid="uid://bv0aslltdrcpv"]
 
 [ext_resource type="Texture2D" uid="uid://bq1j50w06quot" path="res://Assets/Sprites/Effects/Explosion/10.png" id="1_7qc58"]
+[ext_resource type="Script" path="res://Scripts/Abilities/Bomb.cs" id="1_hrbcm"]
 [ext_resource type="Texture2D" uid="uid://dnkt6je4oaobo" path="res://Assets/Sprites/Effects/Explosion/Bomb.png" id="2_qsdh8"]
 [ext_resource type="Texture2D" uid="uid://nhjxhama7s5g" path="res://Assets/Sprites/Effects/Explosion/1.png" id="3_eboao"]
 [ext_resource type="Texture2D" uid="uid://dvnk8j82cvi8r" path="res://Assets/Sprites/Effects/Explosion/2.png" id="4_d3m5s"]
@@ -66,6 +67,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.02]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Hitbox/CollisionShape3D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_afev4"]
 _data = {
@@ -73,14 +86,27 @@ _data = {
 "Explosion": SubResource("Animation_2fbd0")
 }
 
-[node name="Bomb" type="Node3D"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_sx6ro"]
+radius = 4.0
+
+[node name="Bomb" type="Node3D" node_paths=PackedStringArray("animationPlayer")]
+script = ExtResource("1_hrbcm")
+animationPlayer = NodePath("AnimationPlayer")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 pixel_size = 0.02
-texture = ExtResource("1_7qc58")
+texture = ExtResource("6_mq5l7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_afev4")
 }
 autoplay = "Expand"
+
+[node name="Hitbox" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hitbox"]
+shape = SubResource("SphereShape3D_sx6ro")
+disabled = true
