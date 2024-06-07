@@ -9,6 +9,7 @@ public partial class Camera : Camera3D
     public override void _Ready()
     {
         GameEvents.OnStartGame += HandleStartGame;
+        GameEvents.OnEndGame += HandleEndGame;
     }
 
     private void HandleStartGame()
@@ -16,5 +17,10 @@ public partial class Camera : Camera3D
         Reparent(target);
 
         Position = positionFromTarget;
+    }
+
+    private void HandleEndGame()
+    {
+        Reparent(GetTree().CurrentScene);
     }
 }
