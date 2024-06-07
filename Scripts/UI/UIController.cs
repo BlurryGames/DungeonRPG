@@ -11,5 +11,14 @@ public partial class UIController : Control
         containers = GetChildren().Where(e => e is UIContainer).Cast<UIContainer>().ToDictionary(e => e.Container);
 
         containers[ContainerType.Start].Visible = true;
+
+        containers[ContainerType.Start].ButtonNode.Pressed += HandleStartPressed;
+    }
+
+    private void HandleStartPressed()
+    {
+        GetTree().Paused = false;
+
+        containers[ContainerType.Start].Visible = false;
     }
 }
