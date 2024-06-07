@@ -4,7 +4,7 @@ using System;
 [GlobalClass]
 public partial class StatResource : Resource
 {
-    public Action OnZero = null;
+    public event Action OnZero = null;
 
     private float _statValue = 0.0f;
 

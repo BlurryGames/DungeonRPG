@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\GodotProjects\\DungeonRPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\resources\\statresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\resources\\statresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\Camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\General\\Camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\general\\gameevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\general\\gameevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\General\\GameEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\general\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\general\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\levels\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\levels\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\ui\\uicontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,32 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\Camera.cs",
-              "RelativeDocumentMoniker": "Scripts\\General\\Camera.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\Camera.cs",
-              "RelativeToolTip": "Scripts\\General\\Camera.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "DocumentIndex": 0,
+              "Title": "StatResource.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Resources\\StatResource.cs",
+              "RelativeDocumentMoniker": "Scripts\\Resources\\StatResource.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Resources\\StatResource.cs",
+              "RelativeToolTip": "Scripts\\Resources\\StatResource.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T09:17:40.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameEvents.cs",
-              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameEvents.cs",
-              "RelativeDocumentMoniker": "Scripts\\General\\GameEvents.cs",
-              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameEvents.cs",
-              "RelativeToolTip": "Scripts\\General\\GameEvents.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T09:11:56.029Z",
+              "WhenOpened": "2024-06-07T10:37:25.75Z",
               "EditorCaption": ""
             },
             {
@@ -68,11 +59,38 @@
               "RelativeToolTip": "Scripts\\Levels\\Main.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T08:52:30.228Z"
+              "WhenOpened": "2024-06-07T08:52:30.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\Camera.cs",
+              "RelativeDocumentMoniker": "Scripts\\General\\Camera.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\Camera.cs",
+              "RelativeToolTip": "Scripts\\General\\Camera.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:17:40.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameEvents.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameEvents.cs",
+              "RelativeDocumentMoniker": "Scripts\\General\\GameEvents.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameEvents.cs",
+              "RelativeToolTip": "Scripts\\General\\GameEvents.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:11:56.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UIContainer.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\UI\\UIContainer.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\UIContainer.cs",
@@ -80,11 +98,12 @@
               "RelativeToolTip": "Scripts\\UI\\UIContainer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T08:56:44.861Z"
+              "WhenOpened": "2024-06-07T08:56:44.861Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UIController.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\UI\\UIController.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\UIController.cs",
