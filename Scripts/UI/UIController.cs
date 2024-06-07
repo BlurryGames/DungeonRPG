@@ -13,6 +13,8 @@ public partial class UIController : Control
         containers[ContainerType.Start].Visible = true;
 
         containers[ContainerType.Start].ButtonNode.Pressed += HandleStartPressed;
+
+        GameEvents.OnEndGame += HandleEndGame;
     }
 
     private void HandleStartPressed()
@@ -23,5 +25,11 @@ public partial class UIController : Control
         containers[ContainerType.Stats].Visible = true;
 
         GameEvents.RaiseStartGame();
+    }
+
+    private void HandleEndGame()
+    {
+        containers[ContainerType.Stats].Visible = false;
+        containers[ContainerType.Defeat].Visible = true;
     }
 }
