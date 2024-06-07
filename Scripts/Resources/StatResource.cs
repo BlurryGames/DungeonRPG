@@ -5,6 +5,7 @@ using System;
 public partial class StatResource : Resource
 {
     public event Action OnZero = null;
+    public event Action OnUpdate = null;
 
     private float _statValue = 0.0f;
 
@@ -14,6 +15,9 @@ public partial class StatResource : Resource
         set
         {
             _statValue = Mathf.Clamp(value, 0.0f, Mathf.Inf);
+
+            OnUpdate?.Invoke();
+
             if (_statValue == 0.0f)
             {
                 OnZero?.Invoke();
