@@ -2,6 +2,8 @@ using Godot;
 
 public partial class Bomb : Node3D
 {
+    [Export] public float Damage { get; private set; } = 10.0f;
+
     [Export] private AnimationPlayer animationPlayer = null;
 
     public override void _Ready()
