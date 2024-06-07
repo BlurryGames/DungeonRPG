@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\ui\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\general\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\general\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|d:\\godotprojects\\dungeonrpg\\scripts\\characters\\enemy\\enemiescontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02B4D725-9893-4057-8911-9E11C90F40E7}|DungeonRPG.csproj|solutionrelative:scripts\\characters\\enemy\\enemiescontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
+              "RelativeDocumentMoniker": "Scripts\\General\\GameConstants.cs",
+              "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameConstants.cs",
+              "RelativeToolTip": "Scripts\\General\\GameConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T12:22:16.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EnemiesContainer.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\Characters\\Enemy\\EnemiesContainer.cs",
               "RelativeDocumentMoniker": "Scripts\\Characters\\Enemy\\EnemiesContainer.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Scripts\\Characters\\Enemy\\EnemiesContainer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T12:10:25.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T12:10:25.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameEvents.cs",
               "DocumentMoniker": "D:\\GodotProjects\\DungeonRPG\\Scripts\\General\\GameEvents.cs",
               "RelativeDocumentMoniker": "Scripts\\General\\GameEvents.cs",
@@ -47,8 +63,7 @@
               "RelativeToolTip": "Scripts\\General\\GameEvents.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T12:08:56.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T12:08:56.903Z"
             },
             {
               "$type": "Document",
@@ -58,7 +73,7 @@
               "RelativeDocumentMoniker": "Scripts\\UI\\UIController.cs",
               "ToolTip": "D:\\GodotProjects\\DungeonRPG\\Scripts\\UI\\UIController.cs",
               "RelativeToolTip": "Scripts\\UI\\UIController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAACkAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T12:01:37.699Z",
               "EditorCaption": ""
