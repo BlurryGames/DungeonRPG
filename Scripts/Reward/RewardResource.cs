@@ -3,7 +3,7 @@ using Godot;
 [GlobalClass]
 public partial class RewardResource : Resource
 {
-    [Export] public Texture2D spriteTexture { get; private set; } = null;
+    [Export] public Texture2D SpriteTexture { get; private set; } = null;
 
     [Export] public string Description { get; private set; } = null;
 
