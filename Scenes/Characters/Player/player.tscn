@@ -255,6 +255,7 @@ ShaderTimer = NodePath("ShaderTimer")
 [node name="Sprite3D" type="Sprite3D" parent="."]
 material_overlay = SubResource("ShaderMaterial_5fnoe")
 pixel_size = 0.0025
+alpha_cut = 2
 texture = ExtResource("1_r751r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
