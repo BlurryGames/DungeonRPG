@@ -3,8 +3,8 @@ using System.Linq;
 
 public partial class StateMachine : Node
 {
-    [Export] private Node currentState = null;
-    [Export] private Node[] states = null;
+    [Export] private CharacterState currentState = null;
+    [Export] private CharacterState[] states = null;
 
     public override void _Ready()
     {
@@ -13,7 +13,7 @@ public partial class StateMachine : Node
 
     public void SwitchState<T>()
     {
-        Node newState = states.FirstOrDefault(s => s is T);
+        CharacterState newState = states.FirstOrDefault(s => s is T);
 
         if (newState == null)
         {
@@ -21,6 +21,11 @@ public partial class StateMachine : Node
         }
 
         if (currentState is T)
+        {
+            return;
+        }
+
+        if (!newState.CanTransition())
         {
             return;
         }

@@ -3,16 +3,18 @@ using System;
 
 public partial class PlayerDashState : PlayerState
 {
-    [Export] private Timer timer = null;
-
     [Export] private PackedScene bombScene = null;
+
+    [Export] private Timer dashTimer = null;
+    [Export] private Timer cooldownTimer = null;
 
     [Export(PropertyHint.Range, "0.0f, 20.0f, 0.1f")] private float speed = 10.0f;
 
     public override void _Ready()
     {
         base._Ready();
-        timer.Timeout += HandleDashTimeout;
+        dashTimer.Timeout += HandleDashTimeout;
+        CanTransition = () => cooldownTimer.IsStopped();
     }
 
     public override void _PhysicsProcess(double delta)
@@ -32,7 +34,7 @@ public partial class PlayerDashState : PlayerState
         }
 
         character.Velocity *= speed;
-        timer.Start();
+        dashTimer.Start();
 
         Bomb bomb = bombScene.Instantiate<Bomb>();
         GetTree().CurrentScene.AddChild(bomb);
@@ -41,6 +43,8 @@ public partial class PlayerDashState : PlayerState
 
     private void HandleDashTimeout()
     {
+        cooldownTimer.Start();
+
         character.Velocity = Vector3.Zero;
         character.StateMachine.SwitchState<PlayerIdleState>();
     }
