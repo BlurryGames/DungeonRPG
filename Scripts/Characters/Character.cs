@@ -12,6 +12,7 @@ public abstract partial class Character : CharacterBody3D
     [Export] public Area3D Hurtbox { get; private set; } = null;
     [Export] public Area3D Hitbox { get; private set; } = null;
     [Export] public CollisionShape3D HitboxShape { get; private set; } = null;
+    [Export] public Timer ShaderTimer { get; private set; } = null;
 
     [ExportGroup("AI Nodes")]
     [Export] public Path3D Path { get; private set; } = null;
@@ -21,9 +22,15 @@ public abstract partial class Character : CharacterBody3D
 
     public Vector2 Direction { get; protected set; } = Vector2.Zero;
 
+    private ShaderMaterial shaderMaterial = null;
+
     public override void _Ready()
     {
+        shaderMaterial = (ShaderMaterial)Sprite3D.MaterialOverlay;
+
         Hurtbox.AreaEntered += HandleHurtboxEntered;
+        Sprite3D.TextureChanged += HandleTextureChanged;
+        ShaderTimer.Timeout += HandleShaderTimeout;
     }
 
     public StatResource GetStatResource(Stat stat)
@@ -62,6 +69,17 @@ public abstract partial class Character : CharacterBody3D
         float damage = h.GetDamage();
         health.StatValue -= damage;
 
-        GD.Print(health.StatValue);
+        shaderMaterial.SetShaderParameter("active", true);
+        ShaderTimer.Start();
+    }
+
+    private void HandleTextureChanged()
+    {
+        shaderMaterial.SetShaderParameter("tex", Sprite3D.Texture);
+    }
+
+    private void HandleShaderTimeout()
+    {
+        shaderMaterial.SetShaderParameter("active", false);
     }
 }

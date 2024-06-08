@@ -139,6 +139,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_jsb7h")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/Strengh"]
+layout_mode = 0
 offset_left = 20.0
 offset_top = 4.0
 offset_right = 76.0
@@ -165,6 +166,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_jsb7h")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Stats/MarginContainer/VBoxContainer/EnemyCount"]
+layout_mode = 0
 offset_left = 20.0
 offset_top = 4.0
 offset_right = 76.0
