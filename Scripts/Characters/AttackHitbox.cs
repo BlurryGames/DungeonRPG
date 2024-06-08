@@ -6,4 +6,9 @@ public partial class AttackHitbox : Area3D, IHitbox
     {
         return GetOwner<Character>().GetStatResource(Stat.Strength).StatValue;
     }
+
+    public bool CanStun()
+    {
+        return false;
+    }
 }
